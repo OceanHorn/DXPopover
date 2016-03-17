@@ -14,6 +14,7 @@ typedef NS_ENUM(NSUInteger, DXPopoverPosition) {
 
 typedef NS_ENUM(NSUInteger, DXPopoverMaskType) {
     DXPopoverMaskTypeBlack,
+    DXPopoverMaskTypeClear,
     DXPopoverMaskTypeNone,  // overlay does not respond to touch
 };
 

@@ -174,6 +174,9 @@
         case DXPopoverMaskTypeBlack:
             maskColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             break;
+        case DXPopoverMaskTypeClear:
+            maskColor = [UIColor colorWithWhite:1.0 alpha:0.0];
+            break;
         case DXPopoverMaskTypeNone: {
             maskColor = [UIColor clearColor];
             self.blackOverlay.userInteractionEnabled = NO;
@@ -303,6 +306,7 @@
                     self.didShowHandler();
                 }
             }];
+        
     } else {
         [UIView animateWithDuration:self.animationIn
             delay:0
@@ -315,6 +319,7 @@
                     self.didShowHandler();
                 }
             }];
+        
     }
 }
 
